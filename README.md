@@ -29,8 +29,8 @@ In order to run this, the following steps are needed.<br/>
 2. After you can start to test it using Swagger UI. <br/>
 In general there are 4 REST API created. they are: <br/>
 a) <i>/HomeCarOwnership/profile </i>: return user's profile in JSON when given a user id. If it encounter error during the checking of the POST data, it will return ERR <br/>
-b) <i>/HomeCarOwnership/registerOwner </i>: add owner's details to the Owner table and House table. If it encounter error during the checking of the POST data, it will return ERR <br/>
-c) <i>/HomeCarOwnership/registerCars </i> : add car details to the Car table based on the given owner's id and house id. If it encounter error during the checking of the POST data, it will return ERR <br/>
+b) <i>/HomeCarOwnership/registerOwner </i>: add owner's details to the Owner table and House table. If it encounter error during the checking of the POST data, it will return ERR. Else, it will return OK <br/>
+c) <i>/HomeCarOwnership/registerCars </i> : add car details to the Car table based on the given owner's id and house id. If it encounter error during the checking of the POST data, it will return ERR.Else, it will return OK <br/>
 d) <i>/HomeCarOwnership </i>: A test just to know server has run <br/>
 
 ## How to test using Swagger UI
