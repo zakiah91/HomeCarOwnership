@@ -52,6 +52,7 @@ public class HomeCarOwnershipRestController {
 	
 	
 	@GetMapping
+	/*zakiah25/11: A test just to know server has run*/
 	public String test() {
 		l("test test test");
 		return "Server has started";
@@ -75,6 +76,20 @@ public class HomeCarOwnershipRestController {
 	}
 	
 	@PostMapping("/profile")
+	/**
+	 * zakiah25/11:
+	 * return user's profile in JSON when given a user id. 
+	 * If it encounter error during the checking of the POST data, it will return ERR
+	 * operations:
+	 * 1) check all keys exist. if NOT ALL exist, it will return ERR
+	 * 2) check if owner id is exist. if NOT exist, it will return ERR
+	 * 3) get Owner's id. if owner's id is NULL, return ERR
+	 * 4) get House List based on owner's id. If House List is NULL, return ERR
+	 * 5) for each house, populate the Profile's class
+	 * 6) convert the Profile to JSON using GSON
+	 * @param reqOwner
+	 * @return if OK, return JSON ; If NG, return ERR
+	 */
 	public String getOwnerProfile(@RequestBody String reqOwner) {
 		
 		if(reqOwner == null) {
@@ -135,6 +150,20 @@ public class HomeCarOwnershipRestController {
 	
 	
 	@PostMapping("/registerOwner")
+	/**
+	 * zakiah 25/11:
+	 * add owner's details to the Owner table and House table. 
+	 * If it encounter error during the checking of the POST data, it will return ERR. 
+	 * Else, it will return OK
+	 * operations:
+	 * 1) check all keys exist. IF NOT ALL keys exist, it will return ERR
+	 * 2) check if ownerid exist. If exist, it will return ERR
+	 * 3) check if housenumber exist. If exist, it will return ERR
+	 * 4) save the new owner
+	 * 5) save the new house
+	 * @param reqOwner
+	 * @return If OK, it will return OK; If NG, it will return ERR
+	 */
 	public String registerNewOwner(@RequestBody String reqOwner) {
 		
 		if(reqOwner == null) {
@@ -172,6 +201,20 @@ public class HomeCarOwnershipRestController {
 	}
 	
 	@PostMapping("/registerCars")
+	/**
+	 * zakiah25/11:
+	 * add car details to the Car table based on the given owner's id and house id.
+	 * If it encounter error during the checking of the POST data, it will return ERR.
+	 * Else, it will return OK
+	 * operations:
+	 * 1) check all keys exist. If NOT ALL exist, return ERR
+	 * 2) check owner's id exist. If NOT exist, return ERR
+	 * 3) check whether the owner owns the house by checking the housenumber. If NOT, return ERR
+	 * 4) get the house based on the housenumber. IF NOT exist, return ERR
+	 * 5) convert the JSON Car into JSONArray, then for each element, add it to the Car table
+	 * @param reqOwner
+	 * @return IF OK, it will return OK; If NG, it will return ERR
+	 */
 	public String registerCars(@RequestBody String reqOwner) {
 		
 		if(reqOwner == null) {
