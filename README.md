@@ -7,6 +7,11 @@ The user also can register new house owner and car. <br/>
 1. An owner will have at least one house. <br/>
 2. A house can have no car or one car or multiple cars. <br/>
 
+## Code structure
+The code structure is as below : <br/>
+![image](https://github.com/user-attachments/assets/d1b8ccad-89a6-4cb7-81fc-01164d2fb006)
+
+
 ## How to run
 In order to run this, the following steps are needed.<br/>
 1)Create a database call HomeCarOwnership<br/>
@@ -23,10 +28,10 @@ In order to run this, the following steps are needed.<br/>
    ![image](https://github.com/user-attachments/assets/39b68d0a-e503-4460-8c6f-257a191c797c)
 2. After you can start to test it using Swagger UI. <br/>
 In general there are 4 REST API created. they are: <br/>
-a) /HomeCarOwnership/profile : return user's profile in JSON when given a user id. If it encounter error during the checking of the POST data, it will return ERR <br/>
-b) /HomeCarOwnership/registerOwner : add owner's details to the Owner table and House table. If it encounter error during the checking of the POST data, it will return ERR <br/>
-c) /HomeCarOwnership/registerCars : add car details to the Car table based on the given owner's id and house id. If it encounter error during the checking of the POST data, it will return ERR <br/>
-d) /HomeCarOwnership : A test just to know server has run <br/>
+a) <i>/HomeCarOwnership/profile </i>: return user's profile in JSON when given a user id. If it encounter error during the checking of the POST data, it will return ERR <br/>
+b) <i>/HomeCarOwnership/registerOwner </i>: add owner's details to the Owner table and House table. If it encounter error during the checking of the POST data, it will return ERR <br/>
+c) <i>/HomeCarOwnership/registerCars </i> : add car details to the Car table based on the given owner's id and house id. If it encounter error during the checking of the POST data, it will return ERR <br/>
+d) <i>/HomeCarOwnership </i>: A test just to know server has run <br/>
 
 ## How to test using Swagger UI
 1) After you have run the .war file, go to http://localhost:8080/swagger-ui/index.html
