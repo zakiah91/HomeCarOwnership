@@ -1,4 +1,10 @@
 # HomeCarOwnership (Springboot)
+Summary: This app is use to view owner's profile and register the home-car ownership. <br/>
+For example, if the user give the owner's id, the server will reponse the owner's profile that consist of : owner's detail, house number and car details. <br/>
+The user also can register new house owner and car. <br/>
+## Assumption
+1. An owner will have at least one house. <br/>
+2. A house can have no car or one car or multiple cars. <br/>
 ## How to run
 In order to run this, the following steps are needed.<br/>
 1)Create a database call HomeCarOwnership<br/>
