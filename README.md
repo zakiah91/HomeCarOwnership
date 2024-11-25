@@ -1,4 +1,5 @@
-# HomeCarOwnership-SpringBoot
+# HomeCarOwnership (Springboot)
+## How to run
 In order to run this, the following steps are needed.<br/>
 1)Create a database call HomeCarOwnership<br/>
 2)Modify the content of HomeCarOwnership\src\main\resources\application.properties so that it refers to your db
