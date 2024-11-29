@@ -7,6 +7,10 @@ The user also can register new house owner and car. <br/>
 1. An owner will have at least one house. <br/>
 2. A house can have no car or one car or multiple cars. <br/>
 
+## ER Diagram
+![image](https://github.com/user-attachments/assets/6bd57aeb-9920-42d0-86a4-cbffabe7eb83)
+
+
 ## Code structure
 The code structure is as below : <br/>
 ![image](https://github.com/user-attachments/assets/d1b8ccad-89a6-4cb7-81fc-01164d2fb006)
