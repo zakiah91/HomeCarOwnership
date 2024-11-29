@@ -16,7 +16,7 @@ The code structure is as below : <br/>
 ![image](https://github.com/user-attachments/assets/d1b8ccad-89a6-4cb7-81fc-01164d2fb006)
 
 
-## How to run
+## How to run [To Be Fixed]
 In order to run this, the following steps are needed.<br/>
 1)Create a database call HomeCarOwnership<br/>
 2)Modify the content of HomeCarOwnership\src\main\resources\application.properties so that it refers to your db
@@ -27,7 +27,7 @@ In order to run this, the following steps are needed.<br/>
 5)A .war file will be generated under /target folder <br/>
 6)Start the application by putting the .war file in your server or use command line "java -jar <YOUR_WAR_NAME>.war" <br/>
 
-## App operations
+## App operations [To Be Fixed]
 1. When you run the app, first it will initialize the tables in the db with the following data:
    ![image](https://github.com/user-attachments/assets/39b68d0a-e503-4460-8c6f-257a191c797c)
 2. After you can start to test it using Swagger UI. <br/>
